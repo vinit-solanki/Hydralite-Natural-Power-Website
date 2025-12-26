@@ -24,7 +24,7 @@ const CommunitySection = () => {
             </h2>
             
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
-              Join Velovia riders across the world—sharing journeys, stories, and the future of electric mobility.
+              Join Hydralite riders across the world—sharing journeys, stories, and the future of electric mobility.
             </p>
             
             <a 
@@ -42,14 +42,14 @@ const CommunitySection = () => {
               <div className="w-1/2 aspect-[4/3] overflow-hidden">
                 <img 
                   src={community1} 
-                  alt="Velovia community riders" 
+                  alt="Hydralite community riders" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-1/2 aspect-[4/3] overflow-hidden">
                 <img 
                   src={community2} 
-                  alt="Velovia bike lifestyle" 
+                  alt="Hydralite bike lifestyle" 
                   className="w-full h-full object-cover"
                 />
               </div>

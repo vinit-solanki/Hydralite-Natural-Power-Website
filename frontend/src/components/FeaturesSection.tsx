@@ -6,7 +6,7 @@ const features = [
   {
     icon: MapPin,
     title: "GPS Tracking",
-    description: "Locate your bike anytime via the Velovia app. Real-time alerts if it moves unexpectedly."
+    description: "Locate your bike anytime via the Hydralite app. Real-time alerts if it moves unexpectedly."
   },
   {
     icon: Lightbulb,
@@ -33,7 +33,7 @@ const FeaturesSection = () => {
             </h2>
             
             <p className="text-sm md:text-base text-primary-foreground/70 max-w-md leading-relaxed">
-              More than just a ride — Velovia is a movement. Here's the impact we've already made.
+              More than just a ride — Hydralite is a movement. Here's the impact we've already made.
             </p>
             
             {/* Bike Detail Images */}

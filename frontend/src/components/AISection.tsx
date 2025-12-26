@@ -11,7 +11,7 @@ const AISection = () => {
             <h2 className="text-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-tight text-foreground">
               BOOST YOUR<br />
               RIDE WITH<br />
-              VELOVIA AI.
+              Hydralite AI.
             </h2>
             
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
@@ -32,7 +32,7 @@ const AISection = () => {
             <div className="w-64 md:w-72 aspect-[4/5] overflow-hidden">
               <img 
                 src={phoneOnBike} 
-                alt="Velovia app on smartphone mounted on bike" 
+                alt="Hydralite app on smartphone mounted on bike" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -54,7 +54,7 @@ const AISection = () => {
             </div>
             
             <h3 className="text-display text-2xl md:text-3xl tracking-wide text-foreground">
-              Velovia AI
+              Hydralite AI
             </h3>
             
             <p className="text-sm text-muted-foreground leading-relaxed">

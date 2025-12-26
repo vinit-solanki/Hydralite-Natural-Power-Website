@@ -7,7 +7,7 @@ const models = [
   {
     name: "TRAILRIDER PRO",
     image: riderMountain,
-    description: "Different rides, same innovation. Choose a Velovia model designed for how — and where — you move."
+    description: "Different rides, same innovation. Choose a Hydralite model designed for how — and where — you move."
   },
   {
     name: "URBAN GLIDE",
@@ -32,7 +32,7 @@ const ModelsSection = () => {
             MULTIPLE RIDING STYLES.
           </h2>
           <p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
-            Different rides, same innovation. Choose a Velovia model designed for how — and where — you move.
+            Different rides, same innovation. Choose a Hydralite model designed for how — and where — you move.
           </p>
         </div>
         

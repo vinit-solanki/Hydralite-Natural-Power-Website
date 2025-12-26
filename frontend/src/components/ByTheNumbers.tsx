@@ -12,7 +12,7 @@ const ByTheNumbers = () => {
                 BY THE NUMBERS
               </h2>
               <p className="max-w-sm text-sm text-muted-foreground">
-                More than just a ride — Velovia is a movement. Here's the impact we've already made.
+                More than just a ride — Hydralite is a movement. Here's the impact we've already made.
               </p>
             </div>
             
@@ -26,7 +26,7 @@ const ByTheNumbers = () => {
                   Riders Worldwide
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  Worldwide Joined the Velovia electric movement
+                  Worldwide Joined the Hydralite electric movement
                 </p>
               </div>
               

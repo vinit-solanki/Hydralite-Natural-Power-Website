@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bike, Battery, Shield } from "lucide-react";
 import aiPhoneImage from "@/assets/phone-on-bike.png";
@@ -8,11 +8,11 @@ import safetyImage from "@/assets/bike-detail-pedal.png";
 const features = [
   {
     id: 1,
-    title: "BOOST YOUR RIDE WITH VELOVIA AI.",
+    title: "BOOST YOUR RIDE WITH Hydralite AI.",
     description: "Your bike thinks with you — AI Ride Assist learns your style and makes every ride smoother, faster, smarter.",
     link: "LEARN MORE",
     image: aiPhoneImage,
-    cardTitle: "Velovia AI",
+    cardTitle: "Hydralite AI",
     cardDescription: "AI Ride Assist learns your style and makes every ride smoother, faster, smarter.",
     cardLink: "EXPLORE",
     icon: Bike,
@@ -43,53 +43,22 @@ const features = [
 
 const FeatureShowcase = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (!sectionRef.current) return;
+    const intervalId = window.setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % features.length);
+    }, 4000);
 
-      const section = sectionRef.current;
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const viewportHeight = window.innerHeight;
-      const scrollPosition = window.scrollY;
-      
-      // Calculate position of section relative to viewport
-      const sectionStart = sectionTop - viewportHeight;
-      const sectionEnd = sectionTop + sectionHeight;
-      const currentScroll = scrollPosition + viewportHeight / 2;
-      
-      // Calculate progress through the entire section (0 to 1)
-      const totalDistance = sectionHeight + viewportHeight;
-      const scrolledAmount = currentScroll - sectionStart;
-      const progress = Math.max(0, Math.min(1, scrolledAmount / totalDistance));
-      
-      setScrollProgress(progress);
-      
-      // Determine which feature to show based on scroll progress
-      // Each feature gets 1/3 of the scroll range
-      const featureIndex = Math.min(
-        features.length - 1,
-        Math.floor(progress * features.length * 1.2)
-      );
-      setActiveIndex(featureIndex);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.clearInterval(intervalId);
   }, []);
 
   const activeFeature = features[activeIndex];
 
   return (
     <section
-      ref={sectionRef}
-      className="relative min-h-[300vh] bg-secondary"
+      className="relative min-h-[100vh] bg-secondary"
     >
-      <div className="sticky top-0 flex min-h-screen items-center px-6 py-16 md:px-12 lg:px-20">
+      <div className="flex min-h-screen items-center px-6 py-16 md:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-12 lg:gap-12">
             {/* Left Content */}
@@ -100,7 +69,7 @@ const FeatureShowcase = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
                 >
                   <h2 className="mb-6 text-4xl font-black uppercase leading-tight tracking-tight text-foreground md:text-5xl">
                     {activeFeature.title}
@@ -139,7 +108,7 @@ const FeatureShowcase = () => {
                   initial={{ opacity: 0, x: 100, scale: 0.9 }}
                   animate={{ opacity: 1, x: 0, scale: 1 }}
                   exit={{ opacity: 0, x: -100, scale: 0.9 }}
-                  transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
+                  transition={{ duration: 0.4, ease: [0.32, 0.72, 0, 1] }}
                   className="overflow-hidden rounded-lg shadow-2xl"
                 >
                   <img
@@ -159,7 +128,7 @@ const FeatureShowcase = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -30 }}
-                  transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+                  transition={{ duration: 0.3, delay: 0.05, ease: "easeOut" }}
                   className="w-full max-w-sm rounded-lg border border-border bg-card p-6 shadow-lg"
                 >
                   <div className="mb-4 flex items-start justify-between">

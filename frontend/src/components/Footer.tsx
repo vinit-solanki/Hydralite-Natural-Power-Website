@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-background">
       {/* Main Footer Content */}
-      <div className="px-6 py-12 md:px-12 lg:px-20">
+      <div className="px-6 py-12 md:px-12 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-12">
             {/* Left - Image */}
@@ -27,7 +27,7 @@ const Footer = () => {
                 ELECTRIC INNOVATION FOR A CLEANER, SMARTER TOMORROW.
               </h2>
               <p className="mb-6 max-w-md text-sm text-muted-foreground">
-                At Velovia, we design intelligent electric bicycles that make daily travel cleaner, smarter, and more inspiring.
+                At Hydralite, we design intelligent electric bicycles that make daily travel cleaner, smarter, and more inspiring.
               </p>
               
               {/* Email Subscribe */}
@@ -72,7 +72,7 @@ const Footer = () => {
               <a href="#" className="text-xs text-muted-foreground transition-colors hover:text-foreground">Terms & Conditions</a>
               <a href="#" className="text-xs text-muted-foreground transition-colors hover:text-foreground">Cookie Policy</a>
             </div>
-            <p className="text-xs text-muted-foreground">© 2025 Velovia. All Rights Reserved.</p>
+            <p className="text-xs text-muted-foreground">© 2025 Hydralite. All Rights Reserved.</p>
           </div>
         </div>
       </div>
@@ -80,8 +80,8 @@ const Footer = () => {
       {/* Large Brand Text */}
       <div className="overflow-hidden px-6 pb-8 md:px-12 lg:px-20">
         <div className="mx-auto max-w-7xl">
-          <h1 className="text-center text-[8rem] font-black uppercase leading-none tracking-tighter text-muted-foreground/30 md:text-[12rem] lg:text-[16rem]">
-            VELOVIA
+          <h1 className="text-center text-[8rem] font-black uppercase leading-none tracking-tighter text-muted-foreground/30 md:text-[8rem] lg:text-[13rem]">
+            Hydralite
           </h1>
         </div>
       </div>

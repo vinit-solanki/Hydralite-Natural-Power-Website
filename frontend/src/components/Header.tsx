@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-
+import Logo from '@/assets/hydralite_logo.png';
 interface NavProps {
   className?: string;
 }
@@ -7,9 +7,7 @@ interface NavProps {
 const Header = ({ className }: NavProps) => {
   return (
     <header className={`w-full py-6 px-8 flex items-center justify-between ${className}`}>
-      <div className="text-display text-2xl tracking-wider text-foreground">
-        VELOVIA
-      </div>
+      <img src={Logo} className="w-40 h-15 text-display tracking-wider text-foreground"/>
       
       <nav className="hidden md:flex items-center gap-1">
         <div className="flex items-center bg-primary text-primary-foreground">

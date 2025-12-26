@@ -9,6 +9,7 @@ import electricBike from "@/assets/electric-bike.png";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import ByTheNumbers from "@/components/ByTheNumbers";
 import Footer from "@/components/Footer";
+import HeroSectionImg from "@/assets/hero_section.png";
 
 const Index = () => {
   return (
@@ -16,29 +17,30 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen">
         {/* Background watermark */}
-        <div className="absolute bottom-0 left-0 right-0 text-[20vw] font-display text-foreground/[0.03] leading-none tracking-tight pointer-events-none select-none overflow-hidden whitespace-nowrap">
-          VELOVIA
+        <div className="absolute bottom-0 right-0 text-[20vw] font-display text-foreground/[0.08] leading-none tracking-tight pointer-events-none select-none overflow-hidden whitespace-nowrap">
+          Hydralite
         </div>
         
         <Header />
         
-        <div className="relative px-8 md:px-16 pt-8 md:pt-16 min-h-[calc(100vh-88px)]">
+        <div className="relative px-8 md:px-12 pt-8 md:pt-8 min-h-[calc(100vh-88px)]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Left Content */}
-            <div className="space-y-8 z-10">
-              <h1 className="text-display text-5xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight text-foreground">
-                ELECTRIC PRECISION.<br />
-                URBAN FREEDOM.
+            <div className="space-y-4 z-10">
+              <h1 className="text-display text-5xl md:text-7xl lg:text-8xl tracking-tight text-foreground">
+                RE-DEFINING WELLNESS & SAFETY WITH GREEN TECH.
               </h1>
-              
-              <p className="text-body text-sm md:text-base text-muted-foreground max-w-md leading-relaxed">
-                A high-performance electric bicycle designed for city life and beyond. Smart motor assist, seamless design, GPS tracking, and up to 120 km range—all in one minimalist frame.
+              <div className="flex flex-row gap-5">
+              <p className="text-body text-sm md:text-base text-muted-foreground max-w-md leading-relaxed text-justify">
+                We design sustainable, science-backed innovations that improve everyday life. From healthcare safety to energy independence, Hydralite builds future-ready solutions that  are accessible, reliable, and made for India.
               </p>
-              
+              <div className="flex items-end justify-end">
               <button className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-6 py-4 text-xs tracking-widest font-medium hover:bg-accent transition-colors">
-                VIEW PRODUCT
+                EXPLORE SOLUTIONS
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </button>
+              </div>
+              </div>
             </div>
             
             {/* Right Content - Stats */}
@@ -46,7 +48,7 @@ const Index = () => {
               <div className="text-right">
                 <div className="text-display text-5xl md:text-6xl text-foreground">250K+</div>
                 <div className="text-xs tracking-widest text-muted-foreground font-medium">
-                  RIDERS<br />WORLDWIDE
+                  INNOVATING FOR MILLIONS OF LIVES
                 </div>
               </div>
               
@@ -56,22 +58,14 @@ const Index = () => {
               </div>
             </div>
           </div>
-          
-          {/* Bike Image */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/3 w-[90%] lg:w-[70%] max-w-[1000px]">
-            <img 
-              src={electricBike} 
-              alt="Velovia Electric Bicycle" 
-              className="w-full h-auto object-contain"
-            />
-          </div>
+          <img src={HeroSectionImg} alt="" />
+        
           
           {/* Mobile Stats */}
           <div className="lg:hidden flex items-center justify-between mt-8 relative z-10">
             <div>
-              <div className="text-display text-4xl text-foreground">250K+</div>
               <div className="text-xs tracking-widest text-muted-foreground font-medium">
-                RIDERS WORLDWIDE
+                INNOVATING FOR MILLIONS OF LIVES
               </div>
             </div>
             <CircularText text="• VIDEO • LET'S SEE THE PRODUCT • " />
